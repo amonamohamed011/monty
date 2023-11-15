@@ -3,18 +3,18 @@
 * f_pall - prints the stack
 * @head: stack head
 * @counter: no use
-* Return: void
+* Return: no return
 */
 void f_pall(stack_t **head, unsigned int counter)
 {
-stack_t *i;
+stack_t *h;
 (void)counter;
-i = *head;
-if (i == NULL)
+h = *head;
+if (h == NULL)
 return;
-while (i)
+while (h)
 {
-printf("%d\n", i->n);
-i = i->next;
+printf("%d\n", h->n);
+h = h->next;
 }
 }

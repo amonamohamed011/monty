@@ -21,7 +21,7 @@ fprintf(stderr, "L%d: can't swap, stack too short\n", counter);
 fclose(bus.file);
 free(bus.content);
 free_stack(*head);
-eit(EXIT_FAILURE);
+exit(EXIT_FAILURE);
 }
 h = *head;
 b = h->n;
