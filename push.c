@@ -8,6 +8,7 @@
 void f_push(stack_t **head, unsigned int counter)
 {
 int a, b = 0, flag = 0;
+
 if (bus.arg)
 {
 if (bus.arg[0] == '-')
@@ -23,7 +24,7 @@ free(bus.content);
 free_stack(*head);
 exit(EXIT_FAILURE); }}
 else
-{ fprintf(stderr, "L%d: uasge: push integer\n", counter);
+{ fprintf(stderr, "L%d: usage: push integer\n", counter);
 fclose(bus.file);
 free(bus.content);
 free_stack(*head);
